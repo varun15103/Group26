@@ -1,0 +1,51 @@
+{
+  "notes": "field names for mongo. step 2 should create these collections. vehicle_id/trip_id/rider_id are the same uuids as postgres (string). coordinates are [lng, lat].",
+  "VehicleMetadata": {
+    "example": {
+      "vehicle_id": "c3a91f2e-6b14-4d08-9e7a-21b0c84d5f33",
+      "make": "Toyota",
+      "model": "Innova",
+      "year": 2023,
+      "color": "white",
+      "features": ["AC", "wifi"],
+      "dynamic_features": {
+        "fuel_type": "CNG",
+        "seat_count": 7
+      },
+      "inspections": [
+        {
+          "inspected_at": "2026-08-15T10:00:00Z",
+          "passed": true,
+          "inspector": "RTO hyd",
+          "notes": "ok"
+        }
+      ]
+    }
+  },
+  "TripReviews": {
+    "example": {
+      "trip_id": "9e2b41aa-1c70-4f3d-8a55-6d0e19c2b847",
+      "rider_id": "1f8c03d4-aa27-4b91-b3e6-0c5d78a12e90",
+      "vehicle_id": "c3a91f2e-6b14-4d08-9e7a-21b0c84d5f33",
+      "rating": 5,
+      "tags": ["clean", "on_time"],
+      "comment": "good ride",
+      "created_at": "2026-09-01T12:15:00Z"
+    }
+  },
+  "TelemetryPings": {
+    "example": {
+      "vehicle_id": "c3a91f2e-6b14-4d08-9e7a-21b0c84d5f33",
+      "location": {
+        "type": "Point",
+        "coordinates": [78.4867, 17.385]
+      },
+      "is_available": true,
+      "created_at": "2026-09-02T06:40:00Z"
+    },
+    "indexes_needed_in_step2": {
+      "location": "2dsphere",
+      "created_at": "TTL 7200 seconds"
+    }
+  }
+}

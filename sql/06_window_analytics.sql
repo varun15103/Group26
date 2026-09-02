@@ -1,0 +1,4 @@
+-- step 3 workflow 2
+-- 7 day moving average of fare per vehicle, then DENSE_RANK()
+-- use CTEs + window functions
+-- after it works, save EXPLAIN ANALYZE in performance/postgres_explain_analyzes.txt

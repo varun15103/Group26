@@ -1,0 +1,4 @@
+-- step 3 workflow 1
+-- stored procedure: start txn, take money from wallet (escrow), insert trip, commit
+-- if the check constraint fails (not enough balance) rollback
+-- vehicle_id is required on trips

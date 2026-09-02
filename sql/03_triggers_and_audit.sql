@@ -1,0 +1,4 @@
+-- step 2
+-- trigger on riders AFTER UPDATE OF wallet_balance
+-- insert a row into wallet_audit_logs
+-- action_type should be DEBIT / CREDIT / ESCROW

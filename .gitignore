@@ -1,0 +1,7 @@
+# venv and junk, dont zip these
+venv/
+__pycache__/
+.env
+*.csv
+*.dump
+.DS_Store

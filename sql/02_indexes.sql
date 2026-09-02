@@ -1,0 +1,5 @@
+-- step 2
+-- partial unique index from the pdf:
+-- CREATE UNIQUE INDEX idx_active_rider_trip ON trips (rider_id)
+-- WHERE status IN ('REQUESTED', 'IN_TRANSIT');
+-- add extra indexes if the window query is slow

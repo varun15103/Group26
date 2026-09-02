@@ -1,0 +1,4 @@
+-- step 2
+-- materialized view: vehicles + lifetime completed trip count and total fare
+-- also a function to REFRESH MATERIALIZED VIEW CONCURRENTLY
+-- (concurrent refresh needs a unique index on the view)
