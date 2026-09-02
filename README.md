@@ -1,4 +1,4 @@
-# RideSync (assignment 1, project 2)
+# RideSync (Assignment 1, Project 2)
 
 CS6.302 Software System Development
 
