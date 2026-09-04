@@ -3,7 +3,7 @@
 **Assignment 1, Project 2 — CS6.302 Software System Development**
 **Group 26** 
 
-GitHub: https://github.com/varun15103/group_26
+GitHub: https://github.com/varun15103/Group26
 
 RideSync is a ride-hailing database backend (Uber-style) with no frontend. It's a polyglot-persistence design:
 
@@ -85,6 +85,10 @@ performance/        EXPLAIN ANALYZE / explain("executionStats") output goes here
 ## Setup
 
 **1. Clone and enter the repo.**
+
+```bash
+git clone https://github.com/varun15103/Group26.git
+```
 
 **2. Create and activate the conda environment:**
 
