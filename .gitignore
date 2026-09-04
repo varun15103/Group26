@@ -5,3 +5,4 @@ __pycache__/
 *.csv
 *.dump
 .DS_Store
+data_generation/generated_ids/
